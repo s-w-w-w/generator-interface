@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Generator Interface</title>
+  <style>
+  </style>
+    <script src="SequenceGenerators.js"></script>
+    <script src="Iface.js"></script>
+ </head>
+<body>
+  <h1>Generator interface</h1>
+  <p>Description: Generate a sequence using Next Generated Value.<br /> Set sequence settings by setting generator settings and applying them.</p>
+  <div style="border:1px solid #f2f2f2;">
+    <header>
+      <h2>State</h2>
+    </header>
+    <div style="padding:1em;border:1px solid orange;margin-bottom:1em;">
+      <h3 style="border-bottom:1px solid #d2d2d2;">Generator Settings</h3>
+      <h4>State</h4>
+      <p>
+      <label>Start: 
+        <input value="" id="generator-start"/>
+      </label>  
+      <label>End:      
+        <input value="" id="generator-end"/>
+      </label>
+      <label>Step:   
+        <input value="" id="generator-step"/>
+      </label>
+      </p>
+      <h4>Methods</h4>           
+      <p>
+        <button id = "apply-settings">Apply settings</button>
+      </p>    
+    </div> 
+
+    <div style="padding:1em;border:1px solid orange;">
+      <h3 style="border-bottom:1px solid #d2d2d2;">Next Generated Value</h3>
+      <h4>Methods</h4>
+      <p>Current value:<span id="current-value"></span>
+      </p>        
+      
+      <h4>Methods</h4>
+      <p>
+        <button id = "next-value">Next value</button>
+        <button id = "reset">Reset</button>
+      </p>
+    </div>    
+  </div>
+  
+  
+  <script>
+    // activate the interface
+    new Iface();
+  </script>
+  
+</body>
+</html>
